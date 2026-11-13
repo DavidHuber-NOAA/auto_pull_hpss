@@ -40,7 +40,7 @@ if [[ ! $start_date =~ ^[0-9]{8}$ ]] || [[ ! $end_date =~ ^[0-9]{8}$ ]]; then
     usage
     exit 1
 fi
-set -eux -o pipefail
+set -eu -o pipefail
 
 cur_date=${start_date}
 while [[ ${cur_date} -le ${end_date} ]]; do
