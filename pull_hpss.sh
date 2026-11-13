@@ -42,8 +42,8 @@ while [[ $cur_date -le $end_date ]]; do
             echo "Waiting for $concurrent_jobs jobs to finish..."
             for pid in "${pids[@]}"; do
                 wait $pid
-                pids=("${pids[@]/$pid}")
             done
+            pids=()
             concurrent_jobs=0
         fi
     done
