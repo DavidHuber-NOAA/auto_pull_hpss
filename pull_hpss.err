@@ -1,0 +1,441 @@
++ cur_date=20260801
++ concurrent_jobs=0
++ sub_path=products/atmos/grib2/0p25
++ pids=()
++ declare -a pids
++ [[ 20260801 -le 20260930 ]]
++ echo 'Processing date: 20260801'
+++ date -d 20260801 +%m
++ mm=08
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 00'
++ full_subpath='gfs.20260801/00/products/atmos/grib2/0p25/*'
++ pid=2761283
++ pids+=($pid)
++ concurrent_jobs=1
++ [[ 1 -ge 16 ]]
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 06'
++ full_subpath='gfs.20260801/06/products/atmos/grib2/0p25/*'
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080100/gfsa.tar 'gfs.20260801/00/products/atmos/grib2/0p25/*'
++ pid=2761284
++ pids+=($pid)
++ concurrent_jobs=2
++ [[ 2 -ge 16 ]]
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 12'
++ full_subpath='gfs.20260801/12/products/atmos/grib2/0p25/*'
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080106/gfsa.tar 'gfs.20260801/06/products/atmos/grib2/0p25/*'
++ pid=2761285
++ pids+=($pid)
++ concurrent_jobs=3
++ [[ 3 -ge 16 ]]
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 18'
++ full_subpath='gfs.20260801/18/products/atmos/grib2/0p25/*'
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080112/gfsa.tar 'gfs.20260801/12/products/atmos/grib2/0p25/*'
++ pid=2761286
++ pids+=($pid)
++ concurrent_jobs=4
++ [[ 4 -ge 16 ]]
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080118/gfsa.tar 'gfs.20260801/18/products/atmos/grib2/0p25/*'
+++ date -d '20260801 + 1 day' +%Y%m%d
++ cur_date=20260802
++ [[ 20260802 -le 20260930 ]]
++ echo 'Processing date: 20260802'
+++ date -d 20260802 +%m
++ mm=08
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 00'
++ full_subpath='gfs.20260802/00/products/atmos/grib2/0p25/*'
++ pid=2761293
++ pids+=($pid)
++ concurrent_jobs=5
++ [[ 5 -ge 16 ]]
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 06'
++ full_subpath='gfs.20260802/06/products/atmos/grib2/0p25/*'
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080200/gfsa.tar 'gfs.20260802/00/products/atmos/grib2/0p25/*'
++ pid=2761295
++ pids+=($pid)
++ concurrent_jobs=6
++ [[ 6 -ge 16 ]]
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 12'
++ full_subpath='gfs.20260802/12/products/atmos/grib2/0p25/*'
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080206/gfsa.tar 'gfs.20260802/06/products/atmos/grib2/0p25/*'
++ pid=2761296
++ pids+=($pid)
++ concurrent_jobs=7
++ [[ 7 -ge 16 ]]
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080212/gfsa.tar 'gfs.20260802/12/products/atmos/grib2/0p25/*'
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 18'
++ full_subpath='gfs.20260802/18/products/atmos/grib2/0p25/*'
++ pid=2761298
++ pids+=($pid)
++ concurrent_jobs=8
++ [[ 8 -ge 16 ]]
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080218/gfsa.tar 'gfs.20260802/18/products/atmos/grib2/0p25/*'
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
+++ date -d '20260802 + 1 day' +%Y%m%d
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
++ cur_date=20260803
++ [[ 20260803 -le 20260930 ]]
++ echo 'Processing date: 20260803'
+++ date -d 20260803 +%m
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
++ mm=08
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 00'
++ full_subpath='gfs.20260803/00/products/atmos/grib2/0p25/*'
++ pid=2761314
++ pids+=($pid)
++ concurrent_jobs=9
++ [[ 9 -ge 16 ]]
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 06'
++ full_subpath='gfs.20260803/06/products/atmos/grib2/0p25/*'
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080300/gfsa.tar 'gfs.20260803/00/products/atmos/grib2/0p25/*'
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
++ pid=2761317
++ pids+=($pid)
++ concurrent_jobs=10
++ [[ 10 -ge 16 ]]
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 12'
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080306/gfsa.tar 'gfs.20260803/06/products/atmos/grib2/0p25/*'
++ full_subpath='gfs.20260803/12/products/atmos/grib2/0p25/*'
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
++ pid=2761322
++ pids+=($pid)
++ concurrent_jobs=11
++ [[ 11 -ge 16 ]]
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 18'
++ full_subpath='gfs.20260803/18/products/atmos/grib2/0p25/*'
++ pid=2761325
++ pids+=($pid)
++ concurrent_jobs=12
++ [[ 12 -ge 16 ]]
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080318/gfsa.tar 'gfs.20260803/18/products/atmos/grib2/0p25/*'
+++ date -d '20260803 + 1 day' +%Y%m%d
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080312/gfsa.tar 'gfs.20260803/12/products/atmos/grib2/0p25/*'
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
++ cur_date=20260804
++ [[ 20260804 -le 20260930 ]]
++ echo 'Processing date: 20260804'
+++ date -d 20260804 +%m
++ mm=08
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 00'
++ full_subpath='gfs.20260804/00/products/atmos/grib2/0p25/*'
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
++ pid=2761341
++ pids+=($pid)
++ concurrent_jobs=13
++ [[ 13 -ge 16 ]]
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 06'
++ full_subpath='gfs.20260804/06/products/atmos/grib2/0p25/*'
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
++ pid=2761344
++ pids+=($pid)
++ concurrent_jobs=14
++ [[ 14 -ge 16 ]]
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080400/gfsa.tar 'gfs.20260804/00/products/atmos/grib2/0p25/*'
++ for cycle in 00 06 12 18
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080406/gfsa.tar 'gfs.20260804/06/products/atmos/grib2/0p25/*'
++ echo 'Processing cycle: 12'
++ full_subpath='gfs.20260804/12/products/atmos/grib2/0p25/*'
++ pid=2761346
++ pids+=($pid)
++ concurrent_jobs=15
++ [[ 15 -ge 16 ]]
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 18'
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080412/gfsa.tar 'gfs.20260804/12/products/atmos/grib2/0p25/*'
++ full_subpath='gfs.20260804/18/products/atmos/grib2/0p25/*'
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
++ pid=2761348
++ pids+=($pid)
++ concurrent_jobs=16
++ [[ 16 -ge 16 ]]
++ echo 'Waiting for 16 jobs to finish...'
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080418/gfsa.tar 'gfs.20260804/18/products/atmos/grib2/0p25/*'
++ for pid in "${pids[@]}"
++ wait 2761283
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait 2761284
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait 2761285
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait 2761286
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait 2761293
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait 2761295
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait 2761296
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait 2761298
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait 2761314
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait 2761317
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait 2761322
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait 2761325
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait 2761341
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait 2761344
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait 2761346
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait 2761348
++ pids=("${pids[@]/$pid}")
++ concurrent_jobs=0
+++ date -d '20260804 + 1 day' +%Y%m%d
++ cur_date=20260805
++ [[ 20260805 -le 20260930 ]]
++ echo 'Processing date: 20260805'
+++ date -d 20260805 +%m
++ mm=08
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 00'
++ full_subpath='gfs.20260805/00/products/atmos/grib2/0p25/*'
++ pid=2781230
++ pids+=($pid)
++ concurrent_jobs=1
++ [[ 1 -ge 16 ]]
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 06'
++ full_subpath='gfs.20260805/06/products/atmos/grib2/0p25/*'
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080500/gfsa.tar 'gfs.20260805/00/products/atmos/grib2/0p25/*'
++ pid=2781231
++ pids+=($pid)
++ concurrent_jobs=2
++ [[ 2 -ge 16 ]]
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 12'
++ full_subpath='gfs.20260805/12/products/atmos/grib2/0p25/*'
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080506/gfsa.tar 'gfs.20260805/06/products/atmos/grib2/0p25/*'
++ pid=2781232
++ pids+=($pid)
++ concurrent_jobs=3
++ [[ 3 -ge 16 ]]
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 18'
++ full_subpath='gfs.20260805/18/products/atmos/grib2/0p25/*'
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080512/gfsa.tar 'gfs.20260805/12/products/atmos/grib2/0p25/*'
++ pid=2781233
++ pids+=($pid)
++ concurrent_jobs=4
++ [[ 4 -ge 16 ]]
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080518/gfsa.tar 'gfs.20260805/18/products/atmos/grib2/0p25/*'
+++ date -d '20260805 + 1 day' +%Y%m%d
++ cur_date=20260806
++ [[ 20260806 -le 20260930 ]]
++ echo 'Processing date: 20260806'
+++ date -d 20260806 +%m
++ mm=08
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 00'
++ full_subpath='gfs.20260806/00/products/atmos/grib2/0p25/*'
++ pid=2781242
++ pids+=($pid)
++ concurrent_jobs=5
++ [[ 5 -ge 16 ]]
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 06'
++ full_subpath='gfs.20260806/06/products/atmos/grib2/0p25/*'
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080600/gfsa.tar 'gfs.20260806/00/products/atmos/grib2/0p25/*'
++ pid=2781244
++ pids+=($pid)
++ concurrent_jobs=6
++ [[ 6 -ge 16 ]]
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 12'
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080606/gfsa.tar 'gfs.20260806/06/products/atmos/grib2/0p25/*'
++ full_subpath='gfs.20260806/12/products/atmos/grib2/0p25/*'
++ pid=2781246
++ pids+=($pid)
++ concurrent_jobs=7
++ [[ 7 -ge 16 ]]
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 18'
++ full_subpath='gfs.20260806/18/products/atmos/grib2/0p25/*'
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080612/gfsa.tar 'gfs.20260806/12/products/atmos/grib2/0p25/*'
++ pid=2781247
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
++ pids+=($pid)
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
++ concurrent_jobs=8
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
++ [[ 8 -ge 16 ]]
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080618/gfsa.tar 'gfs.20260806/18/products/atmos/grib2/0p25/*'
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
+++ date -d '20260806 + 1 day' +%Y%m%d
++ cur_date=20260807
++ [[ 20260807 -le 20260930 ]]
++ echo 'Processing date: 20260807'
+++ date -d 20260807 +%m
++ mm=08
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 00'
++ full_subpath='gfs.20260807/00/products/atmos/grib2/0p25/*'
++ pid=2781263
++ pids+=($pid)
++ concurrent_jobs=9
++ [[ 9 -ge 16 ]]
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 06'
++ full_subpath='gfs.20260807/06/products/atmos/grib2/0p25/*'
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080700/gfsa.tar 'gfs.20260807/00/products/atmos/grib2/0p25/*'
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
++ pid=2781265
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080706/gfsa.tar 'gfs.20260807/06/products/atmos/grib2/0p25/*'
++ pids+=($pid)
++ concurrent_jobs=10
++ [[ 10 -ge 16 ]]
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 12'
++ full_subpath='gfs.20260807/12/products/atmos/grib2/0p25/*'
++ pid=2781270
++ pids+=($pid)
++ concurrent_jobs=11
++ [[ 11 -ge 16 ]]
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 18'
++ full_subpath='gfs.20260807/18/products/atmos/grib2/0p25/*'
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080712/gfsa.tar 'gfs.20260807/12/products/atmos/grib2/0p25/*'
++ pid=2781271
++ pids+=($pid)
++ concurrent_jobs=12
++ [[ 12 -ge 16 ]]
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080718/gfsa.tar 'gfs.20260807/18/products/atmos/grib2/0p25/*'
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
+++ date -d '20260807 + 1 day' +%Y%m%d
++ cur_date=20260808
++ [[ 20260808 -le 20260930 ]]
++ echo 'Processing date: 20260808'
+++ date -d 20260808 +%m
++ mm=08
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 00'
++ full_subpath='gfs.20260808/00/products/atmos/grib2/0p25/*'
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
++ pid=2781288
++ pids+=($pid)
++ concurrent_jobs=13
++ [[ 13 -ge 16 ]]
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 06'
++ full_subpath='gfs.20260808/06/products/atmos/grib2/0p25/*'
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080800/gfsa.tar 'gfs.20260808/00/products/atmos/grib2/0p25/*'
++ pid=2781290
++ pids+=($pid)
++ concurrent_jobs=14
++ [[ 14 -ge 16 ]]
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 12'
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080806/gfsa.tar 'gfs.20260808/06/products/atmos/grib2/0p25/*'
++ full_subpath='gfs.20260808/12/products/atmos/grib2/0p25/*'
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
++ pid=2781291
++ pids+=($pid)
++ concurrent_jobs=15
++ [[ 15 -ge 16 ]]
++ for cycle in 00 06 12 18
++ echo 'Processing cycle: 18'
++ full_subpath='gfs.20260808/18/products/atmos/grib2/0p25/*'
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080812/gfsa.tar 'gfs.20260808/12/products/atmos/grib2/0p25/*'
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
++ pid=2781293
++ pids+=($pid)
++ concurrent_jobs=16
++ [[ 16 -ge 16 ]]
++ echo 'Waiting for 16 jobs to finish...'
++ htar -xvf /5year/NCEPDEV/emc-global/emc.glopara/WCOSS2/GFSv17/retrov17_01_realtime/2026080818/gfsa.tar 'gfs.20260808/18/products/atmos/grib2/0p25/*'
++ for pid in "${pids[@]}"
++ wait
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
+[connecting to hpsscore1.fairmont.rdhpcs.noaa.gov/1217]
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait
++ pids=("${pids[@]/$pid}")
++ for pid in "${pids[@]}"
++ wait 2781230
+/var/spool/slurmd/job26328799/slurm_script: line 44: wait: pid 2781230 is not a child of this shell
